@@ -1,0 +1,166 @@
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1E1E1E;
+  }
+
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 300px;
+    height: 600px;
+    position: relative;
+    margin: auto;
+    background-color: #FFF;
+    z-index: 1;
+  }
+
+  .shelves {
+    width: 211px;
+    height: 431px;
+    margin: 28px auto;
+    background-image: url('./images/shelves.jpg');
+  }
+
+  .shopping_cart {
+    width: 276px;
+    height: 225px;
+    background-image: url('./images/basket.png');
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    z-index: 3;
+  }
+
+  .product {
+    touch-action: none;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 3s ease-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  #wine {
+    width: 37px;
+    height: 124px;
+    background-image: url('./images/wine.png');
+    top: 28px;
+    left: 60px;
+  }
+
+  #milk {
+    width: 37px;
+    height: 90px;
+    background-image: url('./images/milk.png');
+    top: 61px;
+    left: 105px;
+  }
+
+  #jam {
+    width: 46px;
+    height: 41px;
+    background-image: url('./images/jam.png');
+    top: 110px;
+    left: 150px;
+  }
+
+  #cheese {
+    width: 36px;
+    height: 34px;
+    background-image: url('./images/cheese.png');
+    top: 118px;
+    left: 205px;
+  }
+
+  #meat {
+    width: 49px;
+    height: 49px;
+    background-image: url('./images/meat.png');
+    top: 195px;
+    left: 55px;
+    background-size: cover;
+  }
+
+  #meat_leg {
+    width: 54px;
+    height: 49px;
+    background-image: url('./images/meat_leg.png');
+    top: 203px;
+    left: 100px;
+  }
+
+  #sauce {
+    width: 76px;
+    height: 47px;
+    background-image: url('./images/sauce.png');
+    top: 202px;
+    left: 170px;
+  }
+
+  #pineapple {
+    width: 35px;
+    height: 74px;
+    background-image: url('./images/pineapple.png');
+    top: 265px;
+    left: 60px;
+  }
+
+  #bananas {
+    width: 47px;
+    height: 47px;
+    background-image: url('./images/bananas.png');
+    top: 295px;
+    left: 110px;
+  }
+
+  #apple {
+    width: 31px;
+    height: 36px;
+    background-image: url('./images/apple.png');
+    top: 300px;
+    left: 165px;
+  }
+
+  #green {
+    width: 62px;
+    height: 52px;
+    background-image: url('./images/green.png');
+    top: 295px;
+    left: 200px;
+  }
+
+  .buttonBuy {
+    width: 174px;
+    height: 56px;
+    display: flex;
+    background-color: #FCE000;
+    color: #000;
+    position: relative;
+    z-index: 4;
+    border-radius: 16px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    animation: blinking 1s linear infinite;
+  }
+   
+  @keyframes blinking {
+    0%, 100% {box-shadow: -3px -3px 30px -3px #FDE632;}
+    50% {box-shadow: -3px -3px 30px -3px #FFF8C1;}
+  }
+  
